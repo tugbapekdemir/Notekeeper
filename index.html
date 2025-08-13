@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteKeeper</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- box ıcon cdn -->
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- wrapper -->
+    <section class="wrapper">
+      <!-- add-box -->
+      <div class="add-box">
+        <!-- ıcon -->
+        <div class="icon">
+          <i class="bx bx-plus"></i>
+        </div>
+
+        <!-- text -->
+
+        <p>Add New Note</p>
+      </div>
+
+      <!-- note item -->
+      <div class="note">
+        <!-- details -->
+        <div class="details">
+          <h2>Note Title</h2>
+          <p>Note Description</p>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom">
+          <!-- date -->
+          <p>Note Date</p>
+
+          <!-- settings -->
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+            <!-- menu -->
+            <ul class="menu">
+              <li class="edit-icon"><i class="bx bx-edit"></i>Edit</li>
+              <li class="delete-icon"><i class="bx bx-trash-alt"></i>Delete</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popup -->
+
+    <div class="popup-box">
+      <div class="popup">
+        <!-- header -->
+
+        <header>
+          <!-- popup title -->
+          <h1 id="popup-title">New Note</h1>
+
+          <!-- close ıcon -->
+
+          <i class="bx bx-x"></i>
+        </header>
+
+        <!-- form -->
+        <form>
+          <!-- fields -->
+          <div class="fields">
+            <label for="title">Title</label>
+            <input type="text" id="title" />
+          </div>
+          <!-- fields -->
+          <div class="fields">
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+
+          <!-- button -->
+
+          <button type="submit" id="form-btn">Add</button>
+    <!-- js connection -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
